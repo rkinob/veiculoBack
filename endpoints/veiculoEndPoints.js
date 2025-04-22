@@ -3,21 +3,22 @@ const path = require('path');
 const dataPath = path.join(__dirname, '../data/veiculos.json');
 
 function validateVeiculoInput(veiculo) {
-    const { placa, chassi, renavam, modelo, marca, ano } = veiculo;
-  
-    if (!placa || placa.length !== 8) {
-      return 'Placa é obrigatória e deve ter 8 caracteres.';
-    }
-  
-    if (!chassi || !renavam || !modelo || !marca) {
-      return 'Chassi, renavam, modelo e marca são obrigatórios.';
-    }
-  
-    if (ano === undefined || isNaN(ano)) {
-      return 'Ano é obrigatório e deve ser numérico.';
-    }
-  
-    return null; 
+    const { placa, chassi, renavam, modeloId, marcaId, ano } = veiculo;
+
+  if (!placa || placa.length !== 8) {
+    return 'Placa é obrigatória e deve ter 8 caracteres.';
+  }
+
+  if (!chassi || !renavam || !modeloId || !marcaId) {
+    return 'Chassi, renavam, modelo e marca são obrigatórios.';
+  }
+
+  if (ano === undefined || isNaN(ano)) {
+    return 'Ano é obrigatório e deve ser numérico.';
+  }
+
+  return null;
+
   }
 
 const getVeiculosFromFile = () => {
