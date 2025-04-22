@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "id": "1745320212457",
+    "placa": "ABC12345",
+    "chassi": "9BWZZZ377VT004251",
+    "renavam": "12345678901",
+    "modelo": "Civic",
+    "marca": "Honda",
+    "ano": 2022
+  }
+]
