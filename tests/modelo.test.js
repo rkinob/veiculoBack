@@ -5,7 +5,7 @@ const path = require('path');
 const should = require('should');
 
 describe('Modelos API', () => {
-  const filePath = path.join(__dirname, '../data/modelo.json');
+  const filePath = path.join(__dirname, '../data/modelos.json');
 
   beforeEach(() => fs.writeFileSync(filePath, '[]'));
 

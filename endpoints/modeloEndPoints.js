@@ -17,7 +17,7 @@ exports.getById = (req, res) => {
 
 exports.create = (req, res) => {
   const { nome } = req.body;
-  if (!nome) return res.status(400).send('Nome do modelo é obrigatório.');
+  if (!nome) return res.status(400).send('Nome do modeloo é obrigatório.');
   const modelos = getData();
   const newModel = { id: Date.now().toString(), nome };
   modelos.push(newModel);
