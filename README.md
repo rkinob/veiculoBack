@@ -8,7 +8,7 @@ Como rodar o backend localmente
 ### Passos
 
 ## 1. Vá para a pasta do backend
-cd backend
+cd [caminho_do_backend]
 
 ## 2. Instale as dependências
 npm install
