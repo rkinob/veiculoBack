@@ -5,8 +5,8 @@ const dataPath = path.join(__dirname, '../data/veiculos.json');
 function validateVeiculoInput(veiculo) {
     const { placa, chassi, renavam, modeloId, marcaId, ano } = veiculo;
 
-  if (!placa || placa.length !== 8) {
-    return 'Placa é obrigatória e deve ter 8 caracteres.';
+  if (!placa || placa.length != 7) {
+    return 'Placa é obrigatória e deve ter 7 caracteres.';
   }
 
   if (!chassi || !renavam || !modeloId || !marcaId) {
